@@ -34,8 +34,7 @@ export default function Header() {
             <MenuIcon />
           </IconButton>
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-            Demo Dashboard ({process.env.REACT_APP_ENVIRONMENT ?? "development"}
-            )
+            Demo Dashboard ({process.env.REACT_APP_ENVIRONMENT ?? "default"})
           </Typography>
           <div>
             <IconButton
