@@ -1,5 +1,11 @@
 import React from "react";
-import { CssBaseline, ThemeProvider, createTheme, Box } from "@mui/material";
+import {
+  CssBaseline,
+  ThemeProvider,
+  createTheme,
+  Box,
+  Typography,
+} from "@mui/material";
 import Header from "./Header";
 import WhetherDataTable from "./WhetherDataTable";
 
@@ -19,6 +25,9 @@ function App() {
           {" "}
           {/* Use Box with sx prop for styling */}
           <main>
+            <Box sx={{ margin: "20px" }}>
+              <Typography>Dashboard</Typography>
+            </Box>
             <WhetherDataTable />
           </main>
         </Box>
